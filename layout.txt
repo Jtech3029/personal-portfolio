@@ -1,0 +1,5 @@
+this project will have 3 main parts to it: Header, Body, and Footer.
+
+The header will consist of regular information, Who i am, what skills I know, and general information
+The body will consist of the projects, they will be in a sort of carosel 
+the footer will have contact info and some other boring stuff

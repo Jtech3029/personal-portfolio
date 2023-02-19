@@ -1,0 +1,31 @@
+#contact{
+    padding-left: 5%;
+    padding-right: 5%;
+    max-width: 100%;
+    min-height: 500px;
+}
+
+.footer-items{
+    animation: 1.5s anim-lineUp ease-out 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer-image{
+    max-width: 200px;
+}
+.footer-items-container{
+    display: flex;
+    gap: 100px;
+}
+
+.footer-item {
+}
+
+.footer-link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

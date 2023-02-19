@@ -1,0 +1,60 @@
+.header{
+    display: flex;
+    padding-top: 95px;
+    padding-left: 5%;
+    padding-right: 5%;
+    transition: transform 2s ease-in;
+    justify-content: space-around;
+    min-height: 500px;
+}
+
+.header:focus{
+    transform: ;
+}
+
+.header-introduction{
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.header-description{
+    max-width: 700px;
+    font-size: 18px;
+}
+
+.animation-load{
+    animation: 1.5s anim-lineUp ease-out 1;
+    overflow: hidden;
+}
+
+@keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20%);
+    }
+    70% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+}
+
+.tech-item{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    align-items: center;
+}
+
+.tech-item-image{
+    max-width: 75px;
+    height: auto;
+    object-fit: fill;
+}
+
+.tech-items{
+    max-width: 400px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(50px, 300px));
+    animation: 1.5s anim-lineUp ease-out 1;
+}

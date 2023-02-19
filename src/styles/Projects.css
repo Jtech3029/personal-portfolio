@@ -1,0 +1,56 @@
+.projects{
+    min-height: 500px;
+    overflow: hidden;
+}
+
+.project-title{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.project-carousel{
+    display: flex;
+    position: relative;
+    gap: 2%;
+    width: 200%;
+    animation: carousel 15s linear 1.5s infinite, 1.5s anim-lineUp ease-out 1;
+    transition: animation-play-state 1s ease-in-out;
+}
+.project-carousel:hover{
+    animation-play-state: paused;
+}
+
+
+.project-carousel-image{
+    max-width: 600px;
+    border-radius: 25px;
+}
+
+@keyframes carousel {
+    100%{
+        transform: translateX(calc(-600px * 5 - ( 2% * 5)));
+    }
+}
+
+.project-carousel-item{
+    transition: transform .3s ease-in-out;
+}
+.project-carousel-item:hover{
+    transform: scale(1.1);
+}
+
+.project-carousel-button{
+    display: none;
+}
+
+.project-carousel-item:hover .project-carousel-button{
+    display: initial;
+    transform: scale(1.2);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.project-carousel-source{
+    padding-right: 54%;
+}
